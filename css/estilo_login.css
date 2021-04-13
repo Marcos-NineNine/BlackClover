@@ -1,0 +1,37 @@
+form{
+	width:700px;
+	height:1000px;
+	margin:0px auto; /*auto deixa no meio*/
+}
+
+input,textarea, select{
+	font:15pt Arial sans-serif;
+	background-color:rgba(255,255,255,0.5);
+}
+
+.sub_titulo{
+	color:black;
+	font-size:15pt;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+.caixa{
+	border:2px solid black;
+	padding:10px;
+	font:15pt Arial sans-serif;
+	background-color:rgba(255,255,255,0.5);
+}
+
+.sexo{
+	width:110px;
+	border:2px solid black;
+	padding:1px;
+}
+.rodape_li{
+	display:inline-block;
+	padding: 2px;
+  	margin:5px;
+}
+

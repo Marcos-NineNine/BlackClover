@@ -1,0 +1,54 @@
+
+.p2{
+	font-size:16pt;
+	font-style:italic;
+}
+.rodape_li{
+    display:inline-block;
+    padding: 2px;
+    margin:5px;
+}
+
+.sub_titulo{
+    text-align:center;
+    background-color: #cecece;
+    color:black;
+}
+
+.TN{
+	background-color:black;
+	color:white;
+}
+.AD{
+	background-color:#B8860B;
+	color:black;
+}
+.AP{
+	background-color:#A9A9A9;
+	color:black;
+}
+.RA{
+	background-color:#1E90FF;
+	color:white;
+}
+.LC{
+	background-color:#B22222;
+	color:black;
+}
+.MV{
+	background-color:#228B22;
+	color:white;
+}
+.CA{
+	background-color:#00CED1;
+	color:black;
+}
+.PC{
+	background-color:#F08080;
+	color:#9400D3;
+}
+.OR{
+	background-color:#663399;
+	color:white;
+}
+/*AQUI TERMINA DOS ESQUADOES*/

@@ -1,0 +1,10 @@
+.rodape_li{
+    display:inline-block;
+    padding: 2px;
+    margin:5px;
+}
+
+.img_clans{
+	border-radius:15px; /*aredonda as bordas*/
+	border:2px solid black; /*borda*/
+}

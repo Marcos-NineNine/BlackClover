@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Black Clover</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Marcos">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/estilo_login.css">
+        <script src="../script/script.js"> </script>
+        <link rel="shortcut icon" href="../imagens/icone.ico" />
+
+        <script src="https://kit.fontawesome.com/2b08678c65.js" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+			.fundo{
+				background-color:white;
+            }
+            .fundo2{
+                background-color: black;
+            }
+		</style>
+    </head>
+	<body>
+		<div class="container fundo">
+            <img style="height: 180px; width: 550px;" class="img-fluid mx-auto d-block" src="../imagens/logo.png" />
+            <nav class="nav justify-content-end fundo2">
+                <ul class="nav nav-pills">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../index.html">Home</a>
+                            <a class="dropdown-item" href="personagens1.html">Personagens</a>
+                            <a class="dropdown-item" href="clans.html">Clans</a>
+                            <a class="dropdown-item" href="masmorra.html">Masmorra</a>
+                            <a class="dropdown-item" href="grimorios1.html">Grimórios</a>
+                            <a class="dropdown-item" href="reinos.html">Reinos</a>
+                            <a class="dropdown-item" href="amv.html">Amv's</a>
+                            <a class="dropdown-item" href="esquadroes.html">Esquadrões</a>
+                            <a class="dropdown-item" href="volumes.html">Volumes/Capítulos</a>
+                            <a class="dropdown-item" href="cavaleiros.html">Cavaleiros Mágicos</a>
+                        </div>
+                    </li>
+                </ul>
+                <li><a class="nav-link" href="https://www.superanimes.org/anime/black-clover">Anime</a></li>
+                <li><a class="nav-link" href="https://www.supermangas.site/manga/black-clover">Mangás</a></li>
+                <li><a class="nav-link" href="info.html">Infomações</a></li>
+                <li><a class="nav-link" href="login.html">Login</a></li>
+            </nav><br>
+            <form class="container-fluid">
+                <fieldset class="caixa form-group">
+                    <legend class="sub_titulo">Login</legend>
+                    <p>
+                        <label for="cLogin">Login:</label>
+                        <input class="form-control" type="text" id="cLogin" name="txLogin" size="50" maxlength="45" placeholder="Digite seu login" />
+                    </p>
+                    <p>
+                        <label for="cSenha">Senha:</label>
+                        <div class="form-group">
+                            <div class="input-group mb-0 input-group-sm">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text bg-primary" id="txtSenha"><i class="fas fa-unlock-alt"></i></span>
+                                </div>
+                          <input class="form-control" type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                          </div>	
+                        </div>	
+                    </p>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+                      </div>
+                </fieldset>
+                <button type="submit" id="cLogin" value="Logar" class="btn btn-primary" onclick="logar()";>Logar</button>
+                <button type="reset" class="btn btn-primary">Limpar</button>
+                <br><br><br>
+                <fieldset class="caixa form-group">
+                    <legend class="sub_titulo">Cadastrar </legend>
+                    <p>
+                        <label for="cNome">Nome:</label>
+                        <input class="form-control" type="text" id="cNome" name="txNome" size="50" maxlength="45" placeholder="Digite seu Nome" />
+                    </p>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Endereço de Email</label>
+                        <div class="input-group mb-0 input-group-lg">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="txtEmail">@</span>
+                          </div>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">Seu email não será compartilhado! Fique tranquilo(a)!</small>
+                      </div>
+                    <fieldset class="sexo">
+                        <legend class="sub_titulo">Sexo</legend>
+                        <input type="radio" name="txtSexo" id="cMasc" />
+                        <label for="cMasc">Masculino </label>
+                        <input type="radio" name="txtSexo" id="cFem" />
+                        <label for="cFem">Feminino</label>
+                    </fieldset><br>
+                    <p>
+                        <label for="cNasc">Data de Nascimento:</label>
+                        <input class="form-control" type="date" id="cNasc" name="txtNasc" />
+                    </p>
+                    <p>
+                        <label for="cEst">Estado:</label>
+                        <select name="txtEst" id="cEst">
+                            <optgroup label="Regiao Sudeste">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG" selected>Minas Gerais</option>
+                                <option value="SP">Sao Paulo</option>
+                            </optgroup>
+                            <option value="DF">Brasilia</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="cCid">Cidade: </label>
+                        <input class="form-control" type="text" name="txtCid" id="cCid" list="cidades"/>
+                        <datalist id="cidades">
+                            <option value="Passos" />
+                            <option value="São Paulo" />
+                            <option value="Cabo Frio" />
+                            <option value="Fortaleza" />
+                        </datalist>
+                    </p>			
+                </fieldset>
+                <button type="submit" id="cNome" value="Cadastrar" class="btn btn-primary" onclick="cadastrar()"; class="btn btn-primary">Cadastrar</button>
+                <button type="reset" class="btn btn-primary">Limpar</button>
+                <br><br><br>
+                <fieldset class="caixa form-group">
+                    <legend class="sub_titulo">Sugestão/Crítica</legend>
+                        <p> Grau de Prioridade:
+                            Min<input type="range" name="txtUrg" id="cUrg" min="0" max="10" step="2">Max
+                        </p>
+                        <p> <label for="cMsg">Mensagem: </label>
+                            <textarea cols="45" rows="5"></textarea>
+                        </p>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Selecionar Arquivo:</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <p>
+                            <input type="checkbox" name="txtRecEmail" id="cRecEmail" checked />
+                            Gostaria de receber emails sobre os Lançamentos dos Capítulos
+                        </p>
+                </fieldset>
+                <button type="submit" class="btn btn-primary" onclick="sugestao()"; class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpar</button>
+            </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="container fundo2">
+            <footer class="blockquote-footer">
+				<h5>TODOS OS DIREITOS DE BLACK CLOVER SÃO RESERVADOS À YUKI TABATA.<br><br>
+                LAYOUT E CONTEÚDO DE DIVULGAÇÃO EXCLUSIVOS DA BLACK CLOVER E SEUS CRIADORES</h5>
+				<h4 class="text-capitalize">FEITO DE FÃ PARA FÃ<br></h4>
+                <p>COPYRIGHT BLACK CLOVER 2020 - 2020 ~ DESENVOLVIDO POR MARCOS PAULO ANDRADE</p>
+				<nav>
+					<ol class="rodape_ol">
+						<li class="rodape_li"><a href="https://www.instagram.com/blackclover__official/"><img class="img-fluid rounded" style="width:50px" src="../imagens/rede.png"></a></li>
+						<li class="rodape_li"><a href="https://www.facebook.com/groups/blackbullss"><img class="img-fluid rounded" style="width:35px" src="../imagens/rede_face2.png"></a></li>
+						<li class="rodape_li"><a href="https://www.superanimes.org/anime/black-clover"><img class="img-fluid rounded" style="width:35px" src="../imagens/rede_animes.png"></a></li>
+					</ol>
+				</nav>
+			</footer>
+        </div>
+	</body>
+</html>	
